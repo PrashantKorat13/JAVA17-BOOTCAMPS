@@ -1,0 +1,291 @@
+
+
+
+
+(1) Write a program to find out Number enter by user is odd or even?
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+
+
+
+package com.smvs;
+
+import java.util.Scanner;
+
+    //even odd
+    public class EvenOdd {
+        public static void main(String[] args) {
+
+            int n;
+            System.out.print("Eneter Value : ");
+            Scanner s = new Scanner(System.in);
+            n = s.nextInt();
+
+            if(n%2==0)
+                System.out.println("Given Value is Odd");
+            else
+                System.out.println("Given Value is Even");
+
+
+        }
+    }
+
+
+
+
+
+(2) Write a program to generate random number in java
+------------------------------------------------------
+------------------------------------------------------
+
+package org.smvs1.JavaHW;
+
+import java.lang.Math;
+public class Randomnuber {
+
+    public static void main(String[] args) {
+
+        System.out.println("Random Number: " + Math.random());
+
+    }
+}
+
+
+
+
+
+(3) Write a program how to reverse the String ex: amit : tima
+--------------------------------------------------------------
+--------------------------------------------------------------
+
+
+
+package org.smvs1.JavaHW;
+
+public class Reverseprint {
+
+
+        public static void main(String[] args) {
+            String string = "Prashant";
+            //Stores the reverse of given string
+            String reversedStr = "";
+
+            //Iterate through the string from last and add each character to variable reversedStr
+
+            for(int i = string.length()-1; i >= 0; i--){
+                reversedStr = reversedStr + string.charAt(i);
+            }
+
+            System.out.println("Original string: " + string);
+            //Displays the reverse of given string
+            System.out.println("Reverse of given string: " + reversedStr);
+        }
+    }
+
+
+
+
+
+
+
+
+
+(4) What are the three different type of comments in Java please explain by code.
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+
+
+There are three types of Java comments:
+Single-line Comments
+Multi-line Comments
+Documentation Comments
+
+	1) Single-line Comments :
+   	---------------------
+
+	it is for the beginners and is in a single line Java comments.
+
+		class Smvs
+		{
+   		 public static void main(String args[])
+    			{
+         // Single line comment here
+       		  System.out.println("Single line comment above");
+   			 }
+		}
+
+
+
+	2) Multi-lines Comments:
+   	----------------------
+
+	Multi-line Java comments are used wherever we need to explain a procedure
+
+	class Smvs
+	{
+	    public static void main(String args[])
+    		{
+        System.out.println("Multi line comments below");
+        /*Comment line 1
+          Comment line 2
+          Comment line 3*/
+    		}
+	}
+
+
+
+	3) Documentation Comments:
+   	-------------------------
+
+		This kind of Java comments is utilized by large code for a programming bundle since it produces a documentation page for reference, 
+		which can be utilized for getting data about strategies, its parameters, and so forth.
+
+
+
+		package JavaCommentsDemo;
+//Program to illustrate comments in Java
+/**
+* <h1>Find sum of two numbers!</h1>
+* FindSum program finds the sum
+*and gives the output on
+*the screen.
+*
+* @author  dataflair
+*/
+public class FindSum 
+{
+  /**
+      * Method to find average
+      * @param numA- This is the first parameter to calculateSum method
+      * @param numB - This is the second parameter to calculateSum method
+      */
+  int numA;
+  int numB;
+FindSum(int numA,int numB)
+{
+  this.numA=numA;
+  this.numB=numB;
+}
+void calculateSum()
+{
+  System.out.println("Sum of two numbers is "+(numA+numB));
+}
+static class Test
+{
+  public static void main(String args[])
+  {
+    FindSum obj=new FindSum(10,20);
+    obj.calculateSum();
+  }
+}
+}
+
+
+
+
+
+
+
+
+(5) Can you explain native keyword how to use in Java 17 ( use google and explain )
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+
+	The native keyword is applied to a method to indicate that the method is implemented in native code using JNI (Java Native Interface).
+
+	1. Void = In Java, the void keyword is used to indicate a method that does not return any value. For example:
+
+
+		public void doSomething() {
+		   // do something
+  		   // no return
+			}
+
+
+	2. Static =  In Java, the static keyword can be applied for inner classes, methods and variables.
+	3. int = 	   In Java, the int keyword is used to declared a variable as a numeric type. An int value can hold a 32-bit integer number which ranges from -231 to 231 - 1. For example:
+	4. if-else = In Java, the if-else construct is used to check if a condition is met then do something, otherwise do something else.
+
+
+
+
+
+
+
+(6) What is loop in Java ? How many types of loop in Java ? explain with simple example
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+Looping is a feature that facilitates the execution of a set of instructions repeatedly untill a certain condition holds false. 
+Java provides three types of loops namely the for loop, the while loop, and the do-while loop. 
+
+
+
+
+(7) What is the use of >>  and  >> operator ( use google and explain )
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+
+
+The >> operator is a signed right shift operator and >>> is an unsigned right shift operator. 
+The left operands value is moved right by the number of bits specified by the right operand
+
+
+
+
+
+
+(8) What is the use of && operation ( use google and explain )
+---------------------------------------------------------------
+---------------------------------------------------------------
+
+The logical AND operator ( && ) returns true if both operands are true and returns false otherwise.
+
+
+
+
+
+(9) What is the use of ++ and - -  operation ( use google and explain )
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+The increment operator ++ increases the value of a variable by 1. Similarly, the decrement operator -- decreases the value of a variable by 1.
+
+
+
+
+
+
+(10) Write a program to convert decimal to binary using system define method ( ex: 20 : 10101)
+----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+
+package org.smvs1.JavaHW;
+
+public class Decimal2Binary {
+
+    public static void main(String[] args) {
+
+        System.out.println(Integer.toBinaryString((450)));
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
